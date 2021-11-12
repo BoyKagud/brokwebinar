@@ -37,6 +37,6 @@ class PostsController extends Controller
 	{
 		$record = Post::find($post_id);
 		$record->delete();
-		return response()->json(null, 201);
+		return response()->json(null, 201); // edit ra ko gamay
 	}
 }
